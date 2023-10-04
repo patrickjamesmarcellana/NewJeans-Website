@@ -66,7 +66,7 @@ $(".member").click((e) => {
         case "hanni": member_object = hanni; break;
     }
 
-    $(".member-modal-picture").attr("src", "static/img/" + element_id + "-main.png")
+    $(".member-modal-picture").attr("src", "public/img/" + element_id + "-main.png")
     $(".member-modal-name").text(member_object.name)
     $("#desc-stage-name").text(member_object.stage_name)
     $("#desc-birth-name").text(member_object.birth_name)
