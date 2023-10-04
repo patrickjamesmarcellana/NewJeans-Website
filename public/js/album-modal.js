@@ -69,10 +69,10 @@ $(".album-exit-button").click(() => {
 $(".album-modal").click(() => {
     setTimeout(function() {
         $(".album-main-box").css('opacity', '0')
-        $(".album-modal").css('transform', 'translateY(-30%)')
+        $(".album-main-box").css('transform', 'translateY(-30%)')
     }, 10);
     setTimeout(() => {
-        $(".album-main-box").css("display", "none")
+        $(".album-modal").css("display", "none")
     }, 100)
 })
 $(".album-main-box").click((e) => {
