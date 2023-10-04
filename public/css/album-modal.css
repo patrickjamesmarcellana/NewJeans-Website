@@ -1,0 +1,57 @@
+.album-modal {
+    background-color: rgb(0, 0, 0); /* fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(0.55mm);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 600;
+    position: fixed;
+    top: 0;
+    padding-right: 13px;
+    box-sizing: border-box;
+    align-items: center;
+    display: none;
+}
+
+.album-main-box {
+    height: 47vw;
+    width: 85vw;
+    background-image: url("../img/newjeans-background-main.png");
+    margin: auto;
+    max-width: 850px;
+    max-height: 470px;
+    box-shadow: 0px 8px 16px 0px #3C3C3C;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(-30%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.album-modal-header {
+    display: flex;
+    margin-top: 1.5vw;
+    margin-right: 1vw;
+}
+
+.album-modal-body {
+    display: flex;
+    align-items:start;
+    box-sizing: border-box;
+    padding: 0vw 4vw 4vw 4vw;
+}
+
+@media screen and (max-width: 1000px) {
+    .album-modal-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .album-main-box {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+    }
+}

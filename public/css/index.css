@@ -1,0 +1,216 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Poppins:wght@300;600;900&display=swap');
+@font-face {
+    font-family: Genty;
+    src: url(../fonts/GentyDemo-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #b4d5ec;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.about-panel-photo {
+    width: 100%;
+    visibility: hidden;
+}
+
+.about-panel {
+    box-sizing: border-box;
+    padding: 3vw 10vw 5vw 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-panel-header {
+    font-family: Genty;
+    font-size: 4.5rem;
+    margin: 0px auto;
+    color: #3c3c3c;
+    box-sizing: border-box;
+    padding-right: 13px;
+    visibility: hidden;
+    background-color: #ffbad2;
+    filter: drop-shadow(3px 3px 6px #3C3C3C);
+    -webkit-filter: drop-shadow(3px 3px 6px #3C3C3C);
+    background-image: linear-gradient(to bottom, #FFFFFF, #ff79a8);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    padding-left: 0.2em;
+}
+
+.about-panel-content {
+    font-family: "Poppins", "sans-serif";
+    font-size: 18px;
+    text-align: justify;
+    visibility: hidden;
+    color: #3c3c3c;
+    box-sizing: border-box;
+    padding-right: 13px;
+}
+
+.members-panel-photo {
+    width: 100%;
+    visibility: hidden;
+}
+
+.members-panel {
+    box-sizing: border-box;
+    padding: 3vw 0vw 5vw 0vw;
+    display: flex;
+    flex-direction: column;
+    padding-right: 13px;
+    width: 100vw;
+}
+
+.members-panel-header {
+    font-family: Genty;
+    font-size: 4.5rem;
+    margin: 0px auto;
+    color: #3c3c3c;
+    padding-right: 13px;
+    box-sizing: border-box;
+    background-color: #ffbad2;
+    filter: drop-shadow(3px 3px 6px #3C3C3C);
+    -webkit-filter: drop-shadow(3px 3px 3px #3C3C3C);
+    background-image: linear-gradient(to bottom, #FFFFFF, #ff79a8);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    padding-left: 0.2em;
+    margin-bottom: 1vw;
+}
+
+.members-list {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-right: 13px;
+}
+
+.member {
+    width: 280px;
+    margin: 0px 2vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", "sans-serif";
+    font-size: 1.5rem;
+    color: #3C3C3C;
+}
+
+.member-photo {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    visibility: hidden;
+    margin-bottom: 0.8vw;
+}
+
+.member-photo:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .members-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        margin-bottom: 4vw;
+    }
+}
+
+.discography-panel-photo {
+    width: 100%;
+    visibility: hidden;
+}
+
+.discography-panel {
+    box-sizing: border-box;
+    padding: 3vw 0vw 5vw 0vw;
+    display: flex;
+    flex-direction: column;
+    padding-right: 13px;
+    width: 100vw;
+}
+
+.discography-panel-header {
+    font-family: Genty;
+    font-size: 4.5rem;
+    margin: 0px auto;
+    color: #3c3c3c;
+    padding-right: 13px;
+    box-sizing: border-box;
+    background-color: #ffbad2;
+    filter: drop-shadow(3px 3px 6px #3C3C3C);
+    -webkit-filter: drop-shadow(3px 3px 3px #3C3C3C);
+    background-image: linear-gradient(to bottom, #FFFFFF, #ff79a8);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    padding-left: 0.2em;
+    margin-bottom: 1vw;
+}
+
+.discography-list {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-right: 13px;
+}
+
+.album {
+    width: 280px;
+    margin: 0px 2vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", "sans-serif";
+    font-size: 1.5rem;
+    color: #3C3C3C;
+}
+
+.album-photo {
+    max-width: 100%;
+    max-height: 100%;
+    visibility: hidden;
+    margin-bottom: 0.8vw;
+    box-shadow: 8px 8px 16px 0px #3C3C3C;
+}
+
+.album-photo:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .discography-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .album {
+        margin-bottom: 4vw;
+    }
+}

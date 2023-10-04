@@ -1,0 +1,121 @@
+.member-modal {
+    background-color: rgb(0, 0, 0); /* fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(0.55mm);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 600;
+    position: fixed;
+    top: 0;
+    padding-right: 13px;
+    box-sizing: border-box;
+    align-items: center;
+    display: none;
+}
+
+.main-box {
+    height: 47vw;
+    width: 85vw;
+    background-image: url("../img/newjeans-background-main.png");
+    margin: auto;
+    max-width: 850px;
+    max-height: 470px;
+    box-shadow: 0px 8px 16px 0px #3C3C3C;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(-30%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.member-modal-header {
+    display: flex;
+    margin-top: 1.5vw;
+    margin-right: 1vw;
+}
+
+.member-modal-content {
+    box-sizing: border-box;
+    padding: 0vw 5vw 2vw 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.member-modal-name {
+    font-family: Genty;
+    font-size: 4.5rem;
+    color: #3c3c3c;
+    box-sizing: border-box;
+    padding-right: 13px;
+    background-color: #ffbad2;
+    filter: drop-shadow(3px 3px 2px #3C3C3C);
+    -webkit-filter: drop-shadow(3px 3px 2px #3C3C3C);
+    background-image: linear-gradient(to bottom, #FFFFFF, #ff79a8);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    padding-left: 0.2em;
+}
+
+.member-modal-body {
+    display: flex;
+    align-items:start;
+}
+
+.member-modal-picture {
+    max-width: 45%;
+    box-shadow: 0px 8px 16px 0px #3C3C3C;
+    min-width: 330px;
+}
+
+.member-modal-description {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    box-sizing: border-box;
+    padding-left: 3.5vw;
+}
+
+.desc-category {
+    font-family: "Poppins", "sans-serif";
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3vw;
+}
+
+.desc {
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1000px) {
+    .member-modal-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-modal-description {
+        padding-left: 0;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .member-modal-name {
+        font-size: 3.5rem;
+    }
+
+    .member-modal-picture {
+        max-width: 330px;
+    }
+
+    .main-box {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+    }
+}

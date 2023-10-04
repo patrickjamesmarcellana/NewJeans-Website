@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> NewJeans </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <link rel="icon" type="image/png" href="public/img/newjeans-getup-logo.png">
+        <link rel="stylesheet" type="text/css" media="all" href="public/css/index.css">
+        <link rel="stylesheet" type="text/css" media="all" href="public/css/navbar.css">
+        <link rel="stylesheet" type="text/css" media="all" href="public/css/member-modal.css">
+        <link rel="stylesheet" type="text/css" media="all" href="public/css/album-modal.css">
+
+        <script src="public/js/code.jquery.com_jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="public/js/navbar.js" defer></script>
+        <script src="public/js/index.js" defer></script>
+        <script src="public/js/member-modal.js" defer></script>
+        <script src="public/js/album-modal.js" defer></script>
+    </head>
+    <body>
+        <div class="menu-modal">
+            <div class="header">
+                <button class="exit-button">
+                    <img class="exit-button-sprite" src="public/img/newjeans-close-button.png">
+                </button>
+            </div>
+            <div class="dropdown-content">
+                <div class="navbar-button navbar-button2" id="home-button-2">Home</div>
+                <span class="navbar-button navbar-button2" id="about-button-2">About NewJeans</span>
+                <div class="navbar-button navbar-button2" id="members-button-2">Members</div>
+                <div class="navbar-button navbar-button2" id="discography-button-2">Discography</div>
+            </div>
+        </div>
+
+        <div class="member-modal">
+            <div class="main-box">
+                <div class="member-modal-header">
+                    <button class="exit-button">
+                        <img class="exit-button-sprite" src="public/img/newjeans-close-button.png">
+                    </button>
+                </div>
+                <div class="member-modal-content">
+                    <div class="member-modal-body">
+                        <img class="member-modal-picture">
+                        <span class="member-modal-description">
+                            <div class="member-modal-name"></div>
+                            <div class="desc-category">
+                                Stage Name: <span id="desc-stage-name" class="desc"></span>
+                            </div>
+                            <div class="desc-category">
+                                Birth Name: <span id="desc-birth-name" class="desc"></span>
+                            </div>
+                            <div class="desc-category">
+                                Birthdate: <span id="desc-birthdate" class="desc"></span>
+                            </div>
+                            <div class="desc-category">
+                                Nationality: <span id="desc-nationality" class="desc"></span>
+                            </div>
+                            <div class="desc-category">
+                                Unofficial Position: <span id="desc-position" class="desc"></span>
+                            </div>
+                            <div class="desc-category">
+                                Representative Color: <span id="desc-color" class="desc"></span>
+                            </div>
+                            <div class="desc-category">
+                                Representative Emoji: <span id="desc-emoji" class="desc"></span>
+                            </div>
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="album-modal">
+            <div class="album-main-box">
+                <div class="album-modal-header">
+                    <button class="exit-button album-exit-button">
+                        <img class="exit-button-sprite" src="public/img/newjeans-close-button.png">
+                    </button>
+                </div>
+                <div class="album-modal-content">
+                    <div class="album-modal-body"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navbar-panel">
+            <span class="navbar-logo-panel">
+                <img class="navbar-logo" src="public/img/newjeans-getup-logo.png" alt="NewJeans Logo" title="NewJeans Logo">
+            </span>
+        
+            <span class="navbar-buttons-panel">
+                <span class="navbar-button navbar-button3" id="home-button-1">Home</span>
+                <span class="navbar-button navbar-button3" id="about-button-1">NewJeans</span>
+                <span class="navbar-button navbar-button3" id="members-button-1">Members</span>
+                <span class="navbar-button navbar-button3" id="discography-button-1">Discography</span>
+            </span>
+        
+            <span class="navbar-hamburger">
+                <img class="navbar-hamburger-sprite" src="public/img/newjeans-hamburger.png">
+            </span>
+        </div>
+        
+        <div class="content">
+            <img class="about-panel-photo" src="public/img/newjeans-group-photo-1.jpg" alt="NewJeans Debut Photo" title="NewJeans Debut Photo">
+            <div class="about-panel">
+                <div class="about-panel-header">NewJeans</div>
+                <div class="about-panel-content">
+                    NewJeans (뉴진스 in Korean) is a South Korean girl group that officially debuted on August 1, 2022,
+                    under the record label, ADOR, a subsidiary of Hybe Corporation. The group consists of five members,
+                    including Hanni, Danielle, Minji, Hyein, and Haerin. NewJeans is considered a 4th generation Korean
+                    pop (K-pop) girl group, joining the likes of IVE, ITZY, and G-IDLE in the scene. In terms of genre,
+                    NewJeans's concept is centered on their girl-next-door image and pop and R&B tunes influenced by
+                    numerous dance and club trends from the 1990s and 2000s.
+                    
+                    <br> <br>
+        
+                    NewJeans debuted their first music video in July 2022 with the track “Attention,” followed by the
+                    singles, “Hype Boy” and “Cookie,” which are all under their first extended play (EP), “New Jeans.”
+                    The group’s most recent comeback is “Get Up,” their second EP, with the first single from it called
+                    “Super Shy” becoming their highest-charting track on multiple international charts, including the
+                    US Billboard Hot 100 (48th), the UK Singles Chart (52nd), and Billboard Global 200 (2nd).
+                </div>
+            </div>
+        
+            <img class="members-panel-photo" src="public/img/newjeans-group-photo-2.jpg" alt="NewJeans OMG Concept Photo" title="NewJeans OMG Concept Photo">
+            <div class="members-panel">
+                <div class="members-panel-header">Members</div>
+                <div class="members-list">
+                    <div id="haerin" class="member">
+                        <img class="member-photo" src="public/img/haerin-members-photo.jpeg" alt="Haerin" title="Haerin">
+                        Haerin
+                    </div>
+                    <div id="hanni" class="member">
+                        <img class="member-photo" src="public/img/hanni-members-photo.jpeg" alt="Hanni" title="Hanni">
+                        Hanni
+                    </div>
+                    <div id="minji" class="member">
+                        <img class="member-photo" src="public/img/minji-members-photo.jpeg" alt="Minji" title="Minji">
+                        Minji
+                    </div>
+                    <div id="danielle" class="member">
+                        <img class="member-photo" src="public/img/danielle-members-photo.jpeg" alt="Danielle" title="Danielle">
+                        Danielle
+                    </div>
+                    <div id="hyein" class="member">
+                        <img class="member-photo" src="public/img/hyein-members-photo.jpeg" alt="Hyein" title="Hyein">
+                        Hyein
+                    </div>
+                </div>
+            </div>
+        
+            <img class="discography-panel-photo" src="public/img/newjeans-group-photo-3.jpg" alt="NewJeans ZINE Behind Cut" title="NewJeans ZINE Behind Cut">
+            <div class="discography-panel">
+                <div class="discography-panel-header">Discography</div>
+                <div class="discography-list">
+                    <div id="nwjns" class="album">
+                        <img class="album-photo" src="public/img/newjeans-nwjns-cover.jpg" alt="1st EP 'New Jeans'" title="1st EP 'New Jeans">
+                        New Jeans
+                    </div>
+                    <div id="omg" class="album">
+                        <img class="album-photo" src="public/img/newjeans-omg-cover.jpg" alt="Single Album OMG" title="Single Album OMG">
+                        OMG
+                    </div>
+                    <div id="getup" class="album">
+                        <img class="album-photo" src="public/img/newjeans-getup-cover.png" alt="2nd EP 'Get Up'" title="2nd EP 'Get Up'">
+                        Super Shy
+                    </div>
+                </div>
+                <br>
+                <div class="discography-list">
+                    <div id="gods" class="album">
+                        <img class="album-photo" src="public/img/newjeans-gods-cover.jpg" alt="Gods, League of Legends" title="Gods, League of Legends">
+                        Gods
+                    </div>
+                    <div id="atcy" class="album">
+                        <img class="album-photo" src="public/img/newjeans-atcy-cover.jpg" alt="A Time Called You (OST)" title="A Time Called You (OST)">
+                        Beautiful Restriction
+                    </div>
+                    <div id="bwya" class="album">
+                        <img class="album-photo" src="public/img/newjeans-bwya-cover.jpg" alt="Be Who You Are (Real Magic)" title="Be Who You Are (Real Magic)">
+                        Be Who You Are
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
